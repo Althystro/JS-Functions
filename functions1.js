@@ -5,9 +5,9 @@
  */
 
 function printName(name) {
-  console.log(`${name}`);
+  return `${name}`;
 }
-printName("wahab");
+console.log(printName("wahab"));
 
 /**
  * Task 2:
@@ -20,9 +20,9 @@ printName("wahab");
 function printAge(birthYear) {
   const currentYear = 2024;
   let age = currentYear - birthYear;
-  return console.log(age);
+  return age;
 }
-printAge(1999);
+console.log(printAge(1999));
 
 /**
  * Task 3:
@@ -34,9 +34,9 @@ printAge(1999);
 function printAgeAndName(birthYear, name) {
   const currentYear = 2024;
   let age = currentYear - birthYear;
-  return console.log(`Hello ${name} you are ${age} years old `);
+  return `Hello ${name} you are ${age} years old `;
 }
-printAgeAndName(1999, "wahab");
+console.log(printAgeAndName(1999, "wahab"));
 /**
  * Task 4:
  * Create a function named `printHello`
@@ -49,18 +49,18 @@ printAgeAndName(1999, "wahab");
  */
 function printHello(name, language) {
   if (language == "en") {
-    console.log(`Hello ${name}`);
+    return `Hello ${name}`;
   } else if (language == "es") {
-    console.log(`Hola ${name}`);
+    return `Hola ${name}`;
   } else if (language == "fr") {
-    console.log(`Bonjour ${name}`);
+    return `Bonjour ${name}`;
   } else if (language == "tr") {
-    console.log(`Merhaba ${name}`);
+    return `Merhaba ${name}`;
   } else {
-    console.log("no valid language");
+    return "no valid language";
   }
 }
-printHello("wahab", "fr");
+console.log(printHello("wahab", "fr"));
 /**
  * Task 5:
  * Create a function named `printMax`
@@ -70,9 +70,9 @@ printHello("wahab", "fr");
 
 function printMax(firstNumber, secondNumber) {
   if (firstNumber > secondNumber) {
-    return console.log(`${firstNumber}`);
+    return `${firstNumber}`;
   } else {
-    return console.log(`${secondNumber}`);
+    return `${secondNumber}`;
   }
 }
-printMax(9, 6);
+console.log(printMax(9, 6));

@@ -9,12 +9,12 @@
  */
 function isOdd(n) {
   if (n % 2 == 0) {
-    return console.log(false);
+    return false;
   } else {
-    return console.log(true);
+    return true;
   }
 }
-isOdd(8);
+console.log(isOdd(8));
 
 /**
  * oddsSmallerThan(n):
@@ -27,9 +27,9 @@ isOdd(8);
  */
 function oddsSmallerThan(n) {
   // Your code here
-  return console.log(Math.floor(n / 2));
+  return Math.floor(n / 2);
 }
-oddsSmallerThan(15);
+console.log(oddsSmallerThan(15));
 
 /**
  * squareOrDouble(n):
@@ -44,10 +44,10 @@ oddsSmallerThan(15);
 function squareOrDouble(n) {
   if (n % 2 == 0) {
     let evenDoubled = n * 2;
-    return console.log(evenDoubled);
+    return evenDoubled;
   } else {
     let oddSquared = n * n;
-    return console.log(oddSquared);
+    return oddSquared;
   }
 }
-squareOrDouble(8);
+console.log(squareOrDouble(8));
